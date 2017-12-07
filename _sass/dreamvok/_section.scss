@@ -1,10 +1,18 @@
+section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.section_tide {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
 section.news{
   position: relative;
   background-color: $gray-800;
   background: url('../assets/images/home/bg_news@2x.jpg') no-repeat center center;
   @include background-cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
   .overlay {
     position: absolute;
     background-color: $gray-900;

@@ -1,0 +1,22 @@
+.middleline {
+  width: 100%;
+  text-align: center;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  span{
+    background: $primary;
+    padding: 0 10px;
+  }
+  &-white {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  &-primary{
+    color: $primary;
+    border-bottom: 1px solid $primary;
+  }
+  &-secondary{
+    color: $secondary;
+    border-bottom: 1px solid $secondary;
+  }
+}

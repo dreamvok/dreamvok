@@ -11,34 +11,8 @@ h6 {
   @include body-font;
 }
 
-.page-content {
+.page-content{
   margin-top: 75px;
-}
-
-.horiline-white {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #fff;
-  line-height: 0.1em;
-  margin: 10px 0 20px;
-  span{
-    color: #fff;
-    background: $primary;
-    padding: 0 10px;
-  }
-}
-
-.horiline-primary{
-  margin: 3rem 0;
-  width: 100%;
-  text-align: center;
-  color: $primary;
-  border-bottom: 1px solid $primary;
-  line-height: 0.1em;
-  span {
-    background: #fff;
-    padding: 0 2rem;
-  }
 }
 
 // .circle {
