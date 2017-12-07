@@ -1,8 +1,11 @@
-header.home {
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
   position: relative;
   background-color: $gray-800;
-  background: url('../assets/images/home/img_hero@2x.jpg') no-repeat center center;
-  @include background-cover;
   padding-top: 5rem;
   padding-bottom: 7rem;
   h1 {
@@ -15,32 +18,28 @@ header.home {
       font-size: 2.5rem;
     }
   }
+}
+
+header.home {
+  background: url("../assets/images/home/img_hero@2x.jpg") no-repeat center center;
+  @include background-cover;
 }
 
 header.about {
-  position: relative;
-  background-color: $gray-800;
-  background: url('../assets/images/about/img_about_cover@2x.jpg') no-repeat center center;
+  background: url("../assets/images/about/img_about_cover@2x.jpg") no-repeat center center;
   @include background-cover;
-  padding-top: 5rem;
-  padding-bottom: 7rem;
-  h1 {
-    font-size: 2.5rem;
-  }
-  @media (min-width: 768px) {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    h1 {
-      font-size: 2.5rem;
-    }
-  }
+}
+
+header.service {
+  background: url("../assets/images/service/img_service_cover@2x.jpg") no-repeat center center;
+  @include background-cover;
 }
 
 footer {
-  img{
+  img {
     height: 40px;
   }
-  a{
+  a {
     color: #fff;
   }
   hr {
@@ -49,13 +48,13 @@ footer {
     border: 0;
     border-top: 1px solid #fff;
     margin: 1em 0;
-    padding: 0
+    padding: 0;
   }
-  .contact{
+  .contact {
     display: flex;
     justify-content: space-between;
     p {
-      display:inline-block
+      display: inline-block;
     }
   }
 }
