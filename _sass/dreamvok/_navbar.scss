@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+.nav-link{
+  text-transform: uppercase;
+}
+
 .nav-item{
   & a{
     font-size: 14px;
