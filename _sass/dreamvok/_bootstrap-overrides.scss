@@ -66,3 +66,15 @@ h3 {
     }
   }
 }
+
+.badge {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.badge-primary{
+  color: $primary;
+  background-color: $white;
+  border: 1px solid $primary;
+  border-radius: 0;
+}
