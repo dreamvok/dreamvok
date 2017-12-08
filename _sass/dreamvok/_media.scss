@@ -28,3 +28,14 @@
 .media .media-body .media-heading{
   line-height: 80px;
 }
+
+
+.newslist-item{
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  & .date{
+    color: $gray-500;
+  }
+}

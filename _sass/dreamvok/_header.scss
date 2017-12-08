@@ -45,6 +45,12 @@ header.contact {
   @include background-cover;
 }
 
+header.news {
+  background: url("../assets/images/news/img_news_cover@2x.jpg") no-repeat center center;
+  @include background-cover;
+}
+
+
 footer {
   img {
     height: 40px;

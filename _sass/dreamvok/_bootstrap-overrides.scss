@@ -48,14 +48,17 @@ h3 {
 }
 
 .card {
+  font-size: 14px;
   border: none;
   border-radius: 0;
   .card-body {
+    text-align: left;
+    .card-date{
+      color: $gray-500;
+    }
     .card-category{
-      font-size: 14px;
       color: $primary;
     }
-    text-align: left;
     h4 {
       font-size: 1rem;
     }
