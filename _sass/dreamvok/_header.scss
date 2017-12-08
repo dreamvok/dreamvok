@@ -35,6 +35,16 @@ header.service {
   @include background-cover;
 }
 
+header.case {
+  background: url("../assets/images/case/img_case_cover@2x.jpg") no-repeat center center;
+  @include background-cover;
+}
+
+header.contact {
+  background: url("../assets/images/contact/img_contact_cover@2x.jpg") no-repeat center center;
+  @include background-cover;
+}
+
 footer {
   img {
     height: 40px;

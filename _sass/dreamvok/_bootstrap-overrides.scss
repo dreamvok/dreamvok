@@ -78,3 +78,7 @@ h3 {
   border: 1px solid $primary;
   border-radius: 0;
 }
+
+.table th, .table td {
+  border: none;
+}
