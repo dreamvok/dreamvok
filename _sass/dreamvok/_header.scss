@@ -50,6 +50,11 @@ header.news {
   @include background-cover;
 }
 
+header.media_page {
+  background: url("../assets/images/media/img_media_cover@2x.jpg") no-repeat center center;
+  @include background-cover;
+}
+
 
 footer {
   img {

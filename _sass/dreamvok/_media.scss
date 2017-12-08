@@ -39,3 +39,21 @@
     color: $gray-500;
   }
 }
+
+.medialist-item {
+  display: flex;
+  text-align: left;
+  background-color: #fff;
+  & .date{
+    max-width: 150px;
+    flex-grow: 2;
+    color: $gray-500;
+  }
+  & .title{
+    flex-grow: 8;
+  }
+  & .link{
+    flex-grow: 2;
+    text-align: right;
+  }
+}
