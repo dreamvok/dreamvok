@@ -1,5 +1,6 @@
 body {
   @include body-font;
+  animation: fadeIn ease 1s;
 }
 
 h1,
@@ -25,6 +26,7 @@ a {
   font-weight: lighter;
   letter-spacing: 1px;
   color: $gray-800;
+  transition: color .2s;  
   &:hover{
     color: $primary;
   }
