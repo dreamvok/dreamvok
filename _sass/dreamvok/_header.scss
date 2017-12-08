@@ -55,6 +55,10 @@ header.media_page {
   @include background-cover;
 }
 
+header.career {
+  background: url("../assets/images/career/img_career_cover@2x.jpg") no-repeat center center;
+  @include background-cover;
+}
 
 footer {
   img {
