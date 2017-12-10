@@ -1,0 +1,71 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  display: none;
+  margin: 0;
+
+  /****************
+   ** NEW STYLES **
+   ****************/
+
+  list-style: none; /** Remove list bullets */
+  width: 100%; /** Set the width to 100% of it's parent */
+  padding: 0;
+  animation: fadeIn ease 1s;
+}
+
+.dropdown:hover .dropdown-menu {
+
+  border-top: 0;
+  border-right: 2px $primary solid;
+  border-left: 2px $primary solid;
+  border-radius: 0;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu li{
+  border-bottom: 2px $primary solid;
+  border-radius: 0;
+  display: block;
+}
+
+/** Button Styles **/
+.dropdown button {
+  border: 2px $primary solid;
+  text-align: left;
+  width: 100%;
+  background: $primary;
+  color: #FFFFFF;
+  border: none;
+  margin: 0;
+  padding: 1em;
+  font-size: 1em;
+}
+
+/** Arrow Styles **/
+.dropdown button span{
+  float: right;
+}
+
+/** List Item Styles **/
+.dropdown a {
+  font-size: 1.2rem;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  background: #fff;
+  color: $primary;
+}
+
+/** List Item Hover Styles **/
+.dropdown a:hover {
+  color: #fff;
+  background: $primary;
+}

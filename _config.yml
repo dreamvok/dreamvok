@@ -31,6 +31,12 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
 
+collections:
+  - integrative-design-research-required-for-innovation
+  - patent-technology-commercialization-and-r&d-distribution-consultant
+  - brand-experiences-and-new-business-model-design
+  - joint-development-of-50+-new-aging-products
+
 languages: ["zh-TW", "en"]
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
