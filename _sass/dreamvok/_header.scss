@@ -60,6 +60,10 @@ header.career {
   @include background-cover;
 }
 
+header.privacy_policy {
+  background: url("../assets/images/privacy_policy/img_privacy_policy_cover@2x.jpg") no-repeat center center;
+  @include background-cover;
+}
 // integrative-design-research-required-for-innovation
 
 header.future-2020 {
