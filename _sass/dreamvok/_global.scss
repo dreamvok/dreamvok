@@ -34,7 +34,8 @@ a {
 .properties{
   font-size: 14px;
   font-weight: bold;
-
+  line-height: 24px;
+  
   & a{
     color: $primary;
   }
