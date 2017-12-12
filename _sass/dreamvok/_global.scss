@@ -23,7 +23,6 @@ p {
 }
 
 a {
-  font-weight: lighter;
   letter-spacing: 1px;
   color: $gray-800;
   transition: color .2s;  
@@ -31,6 +30,16 @@ a {
     color: $primary;
   }
 }
+
+.properties{
+  font-size: 14px;
+  font-weight: bold;
+
+  & a{
+    color: $primary;
+  }
+}
+
 // .circle {
 //   margin: 4px;
 //   padding: 1rem;
