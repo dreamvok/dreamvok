@@ -16,6 +16,7 @@
 .portfolio {
   background-color: $primary;
 }
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -58,6 +59,9 @@
   text-decoration: underline;
 }
 
+.portfolio-blend-img {
+
+}
 
 @media (min-width: 992px) {
   .portfolio-item {

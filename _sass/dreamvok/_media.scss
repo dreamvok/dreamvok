@@ -41,16 +41,24 @@
   }
 }
 
+.medialist {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .medialist-item {
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   text-align: left;
   background-color: #fff;
   & .date{
+    font-size: 14px;
     max-width: 150px;
     flex-grow: 2;
     color: $gray-500;
   }
   & .title{
+    font-weight: bold;
     flex-grow: 8;
   }
   & .link{

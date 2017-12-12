@@ -56,8 +56,12 @@ h3 {
     border-radius: 0;
   }
   .card-body {
+    font-size: 14px;
     text-align: left;
     padding: 1rem;
+    p {
+      line-height: 24px;
+    }
     .card-date{
       line-height: 32px;
       color: $gray-500;
@@ -75,6 +79,8 @@ h3 {
       bottom: 0;
     }
     .card-title {
+      font-size: 1rem;
+      font-weight: bold;
       line-height: 1.5rem;
     }
   }
