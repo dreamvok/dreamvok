@@ -81,8 +81,8 @@ h3 {
 }
 
 .badge {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .badge-primary{
@@ -90,6 +90,11 @@ h3 {
   background-color: $white;
   border: 1px solid $primary;
   border-radius: 0;
+
+  &:hover{
+    color: $white;
+    background-color: $primary;
+  }
 }
 
 .table th, .table td {
