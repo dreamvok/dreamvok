@@ -1,5 +1,5 @@
-<!-- en/case/patent-technology-commercialization-and-rd-distribution-consultant/content -->
-{% assign this_case_category = 'patent-technology' %}
+<!-- zh-TW/case/brand-experiences-and-new-business-model-design/content -->
+{% assign this_case_category = 'brand-experiences' %}
 
 <section style="padding-top: 4rem; padding-bottom: 4rem;">
   <div class="container">
@@ -9,7 +9,7 @@
         <div class="dropdown">
 
           <!-- trigger button -->
-          <button>Patent Technology Commercialization and R&D Distribution Consultant
+          <button>品牌體驗與新商業模式設計
             <span>
               <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/down.svg" alt="">
             </span>
@@ -22,7 +22,7 @@
             {% continue %} 
             {% endif %}
             <li>
-              <a href="{{ site.baseurl }}{{ category.url }}">{{ category.title_en }}</a>
+              <a href="{{ site.baseurl }}{{ category.url }}">{{ category.title }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -35,7 +35,7 @@
 <section class="section_tide">
   <div class="portfolio container-fluid p-0">
     <div class="row no-gutters">
-      {% for case in site.data.patent-technology-commercialization-and-rd-distribution-consultant %}
+      {% for case in site.data.brand-experiences-and-new-business-model-design %}
       <div class="col-lg-4">
         <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
           <span class="caption">
@@ -43,7 +43,7 @@
               <p class="category mb-0">{{ case.duration }}</p>
             </span>
             <span class="caption-content">
-              <h4 class="title">{{ case.title_en }}</h4>
+              <h4 class="title">{{ case.title }}</h4>
             </span>
             <span class="caption-content">
               <p class="link mb-0 font-weight-normal">Read more</p>
