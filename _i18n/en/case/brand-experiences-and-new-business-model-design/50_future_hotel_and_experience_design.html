@@ -1,0 +1,72 @@
+<!-- en/case/brand-experiences-and-new-business-model-design/50_future_hotel_and_experience_design -->
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜50⁺ Future Hotel and Experience Design            
+          <br> Category｜
+          <a href="{{ site.baseurl }}/brand-experiences-and-new-business-model-design">Brand Experiences and New Business Model Design</a>
+          <br> Clients｜Leofoo Tourism Group
+          <br> Year｜2016 - 2017
+          <br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          In the face of the opportunities and challenges of the future tourism and travel industry, we worked with Leofoo Tourism Group to determine the essential values of new types of tourism through the 4Ds methodology of service design and lean startups, and analyzing trend development and the transformation of target customer lifestyles. By working with front-line operators across different departments, we proposed key innovation opportunities, the appearances of 50+ new style hotels in the future, and redefined the new experiences offered by hotels of the future.
+            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+            After 11 months of discussion, co-creation, brainstorming, rapid market verification, concept revision and iteration, DreamVok and the Leofoo Tourism Group unanimously agreed to jointly propose the overall innovative services and highlight service scripts of new hotels, redefining the design principles, floor functions and scenario settings, and cross-domain partners and resources of 50+ new style hotels. We were able to gain the recognition of 50+ customers. In addition, the case also assisted in providing references internally for building future hotels through multidisciplinary technology search and integration, which will soon be launched on the market.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/brand-experiences-and-new-business-model-design/50+_future_hotel_and_experience_design/img_50+_future_hotel_and_experience_design_01@2x.jpg"
+          alt="">
+        <p class="text-primary img-desc">共創設計的過程</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Casesd</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.brand-experiences-and-new-business-model-design %}
+      {% assign current_url = case.url | append: '.html' %}
+      {% if current_url == page.url %} 
+      {% continue %} 
+      {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
