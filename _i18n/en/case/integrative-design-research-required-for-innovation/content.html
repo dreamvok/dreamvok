@@ -17,12 +17,12 @@
 
           <!-- dropdown menu -->
           <ul class="dropdown-menu">
-            {% for category in site.data.case-en %}
+            {% for category in site.data.case %}
             {% if category.category == this_case_category %}
               {% continue %}
             {% endif %}
             <li>
-              <a href="{{ site.baseurl }}{{ category.url }}">{{ category.title }}</a>
+              <a href="{{ site.baseurl }}{{ category.url }}">{{ category.title_en }}</a>
             </li>
             {% endfor %} 
           </ul>
@@ -36,7 +36,7 @@
 <section class="section_tide">
   <div class="portfolio container-fluid p-0">
     <div class="row no-gutters">
-      {% for case in site.data.integrative-design-research-required-for-innovation-en %}
+      {% for case in site.data.integrative-design-research-required-for-innovation %}
       <div class="col-lg-4">
         <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
           <span class="caption">
@@ -44,7 +44,7 @@
               <p class="category mb-0">{{ case.duration }}</p>
             </span>
             <span class="caption-content">
-              <h4 class="title">{{ case.title }}</h4>
+              <h4 class="title">{{ case.title_en }}</h4>
             </span>
             <span class="caption-content">
               <p class="link mb-0 font-weight-normal">Read more</p>

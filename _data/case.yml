@@ -1,19 +1,24 @@
 - category: featured-work
   title: Featured Work
+  title_en: Featured Work
   url: "/case"
 
 - category: integrative-design
   title: 創新背後所需之整合式設計研究
+  title_en: Integrative Design Research Required for Innovation
   url: "/integrative-design-research-required-for-innovation"
 
 - category: patent-technology
   title: 專利 / 技術之商品化與研發佈局顧問
+  title_en: Patent Technology Commercialization And R&D Distribution Consultant
   url: "/patent-technology-commercialization-and-r&d-distribution-consultant"
 
 - category: brand-experiences
   title: 品牌體驗與新商業模式設計
+  title_en: Brand Experiences And New Business Model Design
   url: "/brand-experiences-and-new-business-model-design"
 
 - category: joint-development
   title: 50⁺ 新熟齡產品 / 服務合作開發
+  title_en: Joint Development of 50+ New Aging Products
   url: "/joint-development-of-50+-new-aging-products"
