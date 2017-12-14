@@ -1,0 +1,44 @@
+<!-- zh-TW/case/joint-development-of-50+-new-aging-products/content -->
+{% assign this_case_category = 'integrative-design' %}
+
+<section style="padding-top: 4rem; padding-bottom: 4rem;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 mx-auto">
+        <!-- dropdown container -->
+        <div class="dropdown">
+
+          <!-- trigger button -->
+          <button>50⁺ 新熟齡產品 / 服務合作開發
+            <span>
+              <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/down.svg" alt="">
+            </span>
+          </button>
+
+          <!-- dropdown menu -->
+          <ul class="dropdown-menu">
+            {% for category in site.data.case %} 
+            {% if category.category == this_case_category %} 
+            {% continue %} 
+            {% endif %}
+            <li>
+              <a href="{{ site.baseurl }}{{ category.url }}">{{ category.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-primary">
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-8 mx-auto m-5">
+        <p>DreamVoker 正於 Living Lab 修練中，50 新熟齡產品 / 服務即將推出，敬請拭目以待！
+          <br>其它合作開發提案與服務需求，請直接與我們聯繫。</p>
+      </div>
+    </div>
+  </div>
+</section>
