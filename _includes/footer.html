@@ -1,4 +1,6 @@
 <!-- Footer -->
+{% capture link_zh_TW %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+{% capture link_en %}{{ site.baseurl_root }}/en{{ page.url  }}{% endcapture %}
 <footer class="footer bg-secondary">
   <div class="container">
     <div class="row text-center">
@@ -23,9 +25,9 @@
           </li>
           <li class="list-inline-item">
             <span>
-              <a class="footnav-link" href="#">中文</a>
+              <a class="footnav-link" href="{{ link_zh_TW }}">中文</a>
               /
-              <a class="footnav-link" href="#">EN</a>
+              <a class="footnav-link" href="{{ link_en }}">EN</a>
             </span>
           </li>
         </ul>
