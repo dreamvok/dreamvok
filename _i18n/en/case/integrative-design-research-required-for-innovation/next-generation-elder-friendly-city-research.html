@@ -1,0 +1,87 @@
+<!-- en/case/integrative-design-research-required-for-innovation/next-generation-elder-friendly-city-research -->
+
+<header class="next-generation text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Next Generation Elder-Friendly City Research</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Next Generation Elder-Friendly City Research<br>
+          Category｜<a href="{{ site.baseurl }}/integrative-design-research-required-for-innovation">Integrative design research required for innovation</a><br>
+          Clients｜Taipei City Government, 5% Design Action <br>
+          Year｜2016<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          In response to the substantial increase in the proportion of the future’s elderly population, 5% Design Action and DreamVok undertook the World Design Capital Taipei 2016 International Open-Call Project. We visited elderly care institutions in Taipei, Taichung and Kaohsiung, and started by observing the needs of the elderly. We combined the behavior, obstacles, and needs of the related stakeholders and defined the various needs and gaps through on-site observations, in-depth interviews, and long-term interaction with front-line staff.          
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          In addition, Taiwan designers and multinational design teams from the Netherlands, the United Kingdom, Germany and Denmark were invited to participate in the study in response to the three major topics of “health promotion,” “health management,” and “health care” in aging cities. Through service design ideas and methods and incorporating cross-national and inter-cultural stimuli, a comprehensive and sustainable concept of innovative design for aging cities was proposed and finally displayed at the “2016 WDC International Design Exhibition” - “Taipei Issuuuue.”
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/next-generation-elder-friendly-city-research/img_next-generation-elder-friendly-city-research_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">高齡化城市中的 3 大議題</p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          In the process, over 100 elderly representatives, front-line caregivers, family members, organization heads, medical care and cross-industry representatives participated and the co-creation outcomes included products, services, spaces and activities that were later implemented in more than 12 senior health care organizations all over Taiwan.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/next-generation-elder-friendly-city-research/img_next-generation-elder-friendly-city-research_02@2x.jpg" alt="">
+        <p class="text-primary img-desc">高齡城市創新設計概念</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.integrative-design-research-required-for-innovation %} 
+      {% if page.url contains case.url or case.url contains 'corporate-innovation-design-workshop' %} 
+      {% continue %} 
+      {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
