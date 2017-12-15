@@ -1,0 +1,92 @@
+<!-- en/case/brand-experiences-and-new-business-model-design/retirement-market-insurance-innovation-service-design -->
+
+<header class="retirement-market text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Retirement Market Insurance Innovation Service Design</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Retirement Market Insurance Innovation Service Design
+          <br> Category｜
+          <a href="{{ site.baseurl }}/brand-experiences-and-new-business-model-design">Brand Experiences and New Business Model Design</a>
+          <br> Clients｜Prudential International Life Insurance
+          <br> Year｜2016 - 2017
+          <br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          By 2018, Taiwan’s population over the age of 65 will exceed 14% and it will become an aging society. By 2025, the population over the age of 65 will be as high as 20%, and Taiwan will officially become a hyper-aged society. Are we ready to face our lives of retirement? In the past, people’s needs and plans financially were mostly preparing for disability, dementia and loss of life. However, as life expectancy continues to grow, this traditional approach to financial planning is no longer effective.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Therefore, we worked with Prudential Life Insurance to collect official statistics from the Directorate General of Budget, Accounting and Statistics, foreign trend reports and customer segmentation experience analysis, and discovered that retirees are hopeful and confident about their retirement life not only because of abstract figures, they have actual plans for their future lives and have the ability to achieve them.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/brand-experiences-and-new-business-model-design/retirement-market-insurance-innovation-service-design/img_retirement-market-insurance-innovation-service-design_01@2x.jpg"
+          alt="">
+        <p class="text-primary img-desc">第二人生設計工具包</p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Therefore, after 10 months, we determined the “9 lifestyles” of retirement life for the 50+ group in Taiwan and we also developed the “Retirement Life Design Toolkit.” Through this analysis tool, 50  groups can become designers of their future lives and plan their lives systematically using the same methods as designing iPhones. This also is related to Prudential Life Insurance’s new approaches of customer service, system construction planning and education training, and extends to create innovative services and products that are more in line with the needs of the future retirement market.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/brand-experiences-and-new-business-model-design/retirement-market-insurance-innovation-service-design/img_retirement-market-insurance-innovation-service-design_02@2x.jpg"
+          alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.brand-experiences-and-new-business-model-design %} 
+      {% assign current_url = case.url | append: '.html' %} 
+      {% if current_url == page.url %} 
+      {% continue %} 
+      {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
