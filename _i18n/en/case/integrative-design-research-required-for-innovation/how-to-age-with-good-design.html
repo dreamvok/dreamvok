@@ -1,0 +1,82 @@
+<!-- en/case/integrative-design-research-required-for-innovation/how-to-age-with-good-design -->
+
+<header class="how-to-age text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">How to age with good design?</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜How to age with good design?<br>
+          Category｜<a href="{{ site.baseurl }}/integrative-design-research-required-for-innovation">Integrative design research required for innovation</a><br>
+          Clients｜Taipei City Government, 5% Design Action <br>
+          Year｜2016<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Continuing with the “Next Generation of Elder-Friendly Cities Research,” the rapid aging of urban residents brings more gaps in demand and problems. As a design team that guides innovation, we are trying to come up with better design thinking methods to help businesses efficiently produce more advanced designs / services.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/how-to-age-with-good-design/img_how-to-age-with-good-design_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">高齡產品與服務創新工具組</p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Currently, there are many innovative and well-established cases and practices of elderly health promotion and health care at home and abroad that are worthy of reference. We have conducted systematic analysis for a period of time, and based on the experience of various countries, we have compiled design principles that are helpful to the elderly. From the 4 dimensions of physical evidence, servicescape, processes, and human-ware, we have produced tools which help guide the thinking of R&D teams through a series of questions. The addition of images with text help stimulate creative thinking and are very useful tools for service businesses and 50+ new elderly innovation partners. In the future, the tools will be further developed to become an online system. 
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/how-to-age-with-good-design/img_how-to-age-with-good-design_02@2x.jpg" alt="">
+        <p class="text-primary img-desc">設計原則牌卡</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.integrative-design-research-required-for-innovation %} 
+      {% if page.url contains case.url or case.url contains 'corporate-innovation-design-workshop' %} 
+      {% continue %} 
+      {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
