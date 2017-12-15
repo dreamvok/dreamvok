@@ -1,0 +1,92 @@
+<!-- en/case/integrative-design-research-required-for-innovation/2020-future-living-experience-design -->
+
+<header class="future-2020 text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">2020 Future Living Experience Design</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜2020 Future Living Experience Design<br>
+          Category｜<a href="{{ site.baseurl }}/integrative-design-research-required-for-innovation">Integrative design research required for innovation</a><br>
+          Clients｜ITRI Commercialization and Industry Service Center<br>
+          Year｜2014<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          With the changes in time and demand, people’s lifestyles and behavioral preferences also change, which in turn affects market direction and drives economic trends. In view of this, DreamVok and the ITRI Dechnology team conducted the 2020 life-style trend analysis and user behavior research, in hopes of helping Taiwanese enterprises accurately predict and analyze future opportunities for innovation.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/2020-future-living-experience-design/img_2020-future-living-experience-design_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">趨勢分析和創新方向的關鍵報告</p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          We focused on four future life scenarios: “Living,” “Travel,” “Learning,” and “Health Care.” We presented key reports on trend analysis and the direction of innovation. Finally, we explored the reasons for unmet needs in real life or people's expectations of the future.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/2020-future-living-experience-design/img_2020-future-living-experience-design_02@2x.jpg" alt="">
+        <p class="text-primary img-desc">未來生活情境發展藍圖</p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Based on second-hand information research, we analyzed domestic and international cases and business models in the fields of technology and design and proposed trend forecasts. At the same time, we worked together with multidisciplinary experts during co-creation design workshops to discuss various issues including future entry points, overall persona, needs and innovation opportunities, and presented the development roadmap of four types of life scenarios through visual images.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/2020-future-living-experience-design/img_2020-future-living-experience-design_03@2x.jpg" alt="">
+        <p class="text-primary img-desc">共創設計工作坊</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.integrative-design-research-required-for-innovation %} 
+      {% if page.url contains case.url or case.url contains 'corporate-innovation-design-workshop' %} 
+      {% continue %} 
+      {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
