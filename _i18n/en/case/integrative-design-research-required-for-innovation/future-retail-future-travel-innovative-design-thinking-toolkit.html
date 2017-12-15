@@ -1,0 +1,83 @@
+<!-- en/case/integrative-design-research-required-for-innovation/future-retail-future-travel-innovative-design-thinking-toolkit -->
+
+<header class="future-retail text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Future Retail / Future Travel Innovative Design Thinking Toolkit</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Future Retail / Future Travel Innovative Design Thinking Toolkit<br>
+          Category｜<a href="{{ site.baseurl }}/integrative-design-research-required-for-innovation">Integrative design research required for innovation</a><br>
+          Clients｜ITRI Commercialization and Industry Service Center<br>
+          Year｜2014<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          A company’ s cross-department or collaboration with external units all rely on languages ​​and interfaces that everyone understands so that communication is more efficient. Secondly, many countries are now focusing on the development and investments in the “retail” and “tourism” industries. In response to the changes in consumer spending and technological applications, industries must face more complex cooperative relationships and be able to provide innovative designs and integrate resources.          
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Thus, based on knowledge accumulated from past research and our experience implementing projects, DreamVok focused on these two major themes and dissected the research process and innovative solution development to come up with a guideline. We took the results, proposed ideas and assumptions, and translated them into easy-to-understand images. Through 50 cards combined with service design tools (such as customer journey maps), we revealed character profiles, cases, trends, and new technology applications.          
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          The design process was presented as “board games,” so that members from different backgrounds can talk to each other, understand each other and exchange ideas more efficiently. This product is now widely used among our customers in the hospitality industry, the financial industry, and media industry.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/future-retail-future-travel-innovative-design-thinking-toolkit/img_future-retail-future-travel-innovative-design-thinking-toolkit_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">未來零售創新設計思考工具包</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.integrative-design-research-required-for-innovation %} 
+      {% if page.url contains case.url or case.url contains 'corporate-innovation-design-workshop' %} 
+      {% continue %} 
+      {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
