@@ -1,0 +1,98 @@
+<!-- en/case/patent-technology-commercialization-and-rd-distribution-consultant/dementia-future-care-support-system -->
+
+<header class="dementia-future text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Dementia Future Care Support System</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Dementia Future Care Support System<br>
+          Category｜<a href="{{ site.baseurl }}/patent-technology-commercialization-and-r&d-distribution-consultant">Patent Technology Commercialization and R&D Distribution Consultant</a><br>
+          Clients｜ ITRI<br>
+          Year｜2016<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          On average, there is one person suffering from dementia every 3 seconds around the world, and it is the condition with the highest direct and indirect care costs. In the past, research and investments on dementia care were focused on patients, often ignoring the hard work of the caregivers, and the heavy care burden that causes professional caregivers and family caregivers a lot of unease, dissatisfaction and inconvenience, and putting them under great physical, mental, and financial pressure.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/dementia-future-care-support-system/img_dementia-future-care-support-system_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">跨領域專家共創</p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          In order to better understand the needs and pains of caregivers, we and the ITRI visited a number of dementia health care facilities around Taiwan. We also observed and conducted in-depth interviews with first-line care workers, patients, and their families. From the study, the key needs of family caregivers and professional caregivers were found, which led to innovative opportunities for dementia care, and depicted the best care scenarios for the future. After repeated verification, modification and revalidation of feedback, the team established a concrete and innovative design solution: a smart Dementia Care Assistant.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/dementia-future-care-support-system/img_dementia-future-care-support-system_02@2x.jpg" alt="">
+        <p class="text-primary img-desc">失智症照護的最佳情境</p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Just like“Skynet” in the film “The Terminator,” the smart care system can connect organizations, communities, and homes. We can create sustainable “local day care services” through design and technology to transform dementia care environments and industry status quo. Afterwards, we worked with the ITRI technical integration team to develop precise technical specifications according to each function and built a roadmap for technology research, as an important reference for ITRI's future R & D direction.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <div class="videoWrapper">
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/nZZVq4eJhh8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="text-primary img-desc">情境影片</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.patent-technology-commercialization-and-rd-distribution-consultant %}
+        {% capture _ %}{% increment aindex %}{% endcapture %}
+        {% if page.url contains case.url or case.url contains 'corporate-innovation-design-workshop' %}
+          {% capture _ %}{% decrement aindex %}{% endcapture %}
+          {% continue %} 
+        {% endif %}
+        {% if aindex > 3 %}
+          {% continue %}
+        {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
