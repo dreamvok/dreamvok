@@ -1,0 +1,78 @@
+<!-- en/case/integrative-design-research-required-for-innovation/corporate-innovation-design-workshop -->
+
+<header class="corporate-innovation text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Corporate Innovation Design Workshop</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Corporate Innovation Design Workshop<br>
+          Category｜<a href="{{ site.baseurl }}/integrative-design-research-required-for-innovation">Integrative design research required for innovation</a><br>
+          Clients｜Pfizer and other corporate clients<br>
+          Year｜2012 - Present<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Faced with rapidly changing markets, enterprises have begun to attach importance to internal innovation and change. They not only have to adjust working methods within the organization, but also must have the ability to deal with more difficult challenges arising during innovation and transformation. Through a systematic approach, DreamVok helps companies learn from the perspective of customers and future trends to "redefine" their products and services.           
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          We use “service design” and “lean start-up”methods in our workshops, and unlike business processes in the past, we also include voices of customers and stakeholders. We invite them to speak so businesses are able to come face to face with real customers and listen to their needs, further creating win-win solutions in the workshops. As a guide for businesses to promote innovation and design, DreamVok’s design thinking training not only enhances innovative energy, but also helps gather consensus in the organization to lay the foundation for strategy implementation.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/corporate-innovation-design-workshop/img_corporate-innovation-design-workshop_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">企業創新設計思考工作坊</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.integrative-design-research-required-for-innovation %} 
+      {% if page.url contains case.url or case.url contains 'future-retail-future-travel-innovative-design-thinking-toolkit' %} 
+      {% continue %} 
+      {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

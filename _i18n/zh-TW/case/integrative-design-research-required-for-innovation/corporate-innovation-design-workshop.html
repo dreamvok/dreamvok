@@ -1,0 +1,78 @@
+<!-- zh-TW/case/integrative-design-research-required-for-innovation/corporate-innovation-design-workshop -->
+
+<header class="corporate-innovation text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">企業創新設計思考工作坊</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          專案名稱｜企業創新設計思考工作坊<br>
+          案例類別｜<a href="{{ site.baseurl }}/integrative-design-research-required-for-innovation">創新背後所需之整合式設計研究</a><br>
+          客戶｜輝瑞大藥廠等企業客戶<br>
+          年份｜2012 至今<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+            面對變化快速的市場，企業紛紛開始重視內部創新與變革，不僅是組織內的工作方式調整，更強調企業面對複雜問題的解決能力，來應付產業創新變革中更困難的挑戰。DreamVok 透過系統性的方法，協助企業從顧客角度與前瞻趨勢出發，學習「重新定義」自身的產品與服務。我們在工作坊中運用「服務設計」及「精實創業」的方法進行帶領。            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+            有別於過去企業內的專案流程，我們更在過程中導入「顧客與利害關係人」的聲音，邀請他們現身說法，讓企業有機會面對真實顧客，傾聽需求，進一步在工作坊中共創出雙贏的解決方案。DreamVok 身為企業推行創新與設計的引路人，藉由設計思考訓練，不僅增進組織創新能量，也同時協助企業凝聚願景與共識，為策略執行奠定基礎。            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/integrative-design-research-required-for-innovation/corporate-innovation-design-workshop/img_corporate-innovation-design-workshop_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">企業創新設計思考工作坊</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>相關案例</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.integrative-design-research-required-for-innovation %} 
+      {% if page.url contains case.url or case.url contains 'future-retail-future-travel-innovative-design-thinking-toolkit' %} 
+      {% continue %} 
+      {% endif %}
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
