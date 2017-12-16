@@ -1,0 +1,79 @@
+<!-- en/case/patent-technology-commercialization-and-r&d-distribution-consultant/medical-tattoo-stickers -->
+
+<header class="medical-tattoo-stickers text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Medical Tattoo Stickers</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Medical Tattoo Stickers<br>
+          Category｜<a href="{{ site.baseurl }}/patent-technology-commercialization-and-r&d-distribution-consultant">Patent Technology Commercialization and R&D Distribution Consultant</a><br>
+          Clients｜Development Center for Biotechnology / ITRI<br>
+          Year｜2012<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Although traditional medicinal patches which are well known to the consumers in the market have analgesic and antipyretic effects, but not much focus has been put on their appearances, resulting in poor experiences during use (such as having unattractive patches attached to the skin when going out). Furthermore, the designs of traditional patches do not take into account the users of allergic skin (such as children and adolescents), so users are often unwilling to use the patches after allergic reactions, and healing is of course ineffective.            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          The Development Center for Biotechnology’s “multi-layer coating technology” can not only extract the anti-inflammatory ingredients of herbs, but also lock their essences in tiny molecules that allows them to slowly release over time. Using this technology, our team of designers and R&D team cooperated and thought of the idea of combining tiny molecules containing anti-inflammatory ingredients with tattoo stickers. The tattoo stickers can attach to the skin comfortably and will not easily cause allergic reactions, resolving the shortcomings of traditional patches, to create soothing tattoo stickers that can ease inflammation and look aesthetically pleasing.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/medical-tattoo-stickers/img_medical-tattoo-stickers_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">藥用紋身貼</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.relative-patent-technology %}
+      {% if page.url contains case.url %}
+        {% continue %} 
+      {% endif %}
+        
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

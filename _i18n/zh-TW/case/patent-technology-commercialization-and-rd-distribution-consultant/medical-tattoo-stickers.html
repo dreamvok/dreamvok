@@ -1,0 +1,79 @@
+<!-- zh-TW/case/patent-technology-commercialization-and-r&d-distribution-consultant/medical-tattoo-stickers -->
+
+<header class="medical-tattoo-stickers text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">藥用紋身貼</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          專案名稱｜藥用紋身貼<br>
+          案例類別｜<a href="{{ site.baseurl }}/patent-technology-commercialization-and-r&d-distribution-consultant">專利 / 技術之商品化與研發佈局顧問</a><br>
+          客戶｜生技中心、工研院<br>
+          年份｜2012<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          市面上消費者熟知的藥用貼片，雖然有鎮痛解熱的功效，但是在設計美學方面一直不是各家產品關注的焦點，導致在使用上體驗不佳 (如外出時貼一塊藥膏，感覺就會怕與外在搭配不合)。再者，傳統貼片的設計也並未考慮到過敏膚質的使用者 (如孩童和青少年)，以至於使用者常貼上後因皮膚過敏而不願意使用，當然也就無法達到貼片所應要提供的療效。            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          生技中心的「多層次包覆技術」，不僅能將草本植物抗發炎成分萃取，更能將其精華鎖在微小分子內，隨時間慢慢釋放出來。利用此項技術，我們媒合設計師和生技中心的研發團隊進行共創發想，將具有抗發炎成分的微小分子與紋身貼紙結合。紋身貼紙能與皮膚貼合卻不造成異物感，也不易引起過敏反應，一改傳統貼片的缺點，打造能減緩發炎症狀又美觀好用，具有舒緩疼痛的紋身貼。
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/medical-tattoo-stickers/img_medical-tattoo-stickers_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">藥用紋身貼</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>相關案例</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.relative-patent-technology %}
+      {% if page.url contains case.url %}
+        {% continue %} 
+      {% endif %}
+        
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
