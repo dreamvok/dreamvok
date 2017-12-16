@@ -1,0 +1,84 @@
+<!-- en/case/patent-technology-commercialization-and-r&d-distribution-consultant/skincare-industry-innovation -->
+
+<header class="skincare-industry text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Skincare Industry Innovation</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Skincare Industry Innovation<br>
+          Category｜<a href="{{ site.baseurl }}/patent-technology-commercialization-and-r&d-distribution-consultant">Patent Technology Commercialization and R&D Distribution Consultant</a><br>
+          Clients｜ITRI<br>
+          Year｜2015<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Taiwan is very advanced in cosmetics and skin care products manufacturing and many beauty skin care products of well-known brands are actually made by plants in Taiwan. However, from the perspective of global division of labor, the key elements of raw materials and recipes are still controlled by the major skincare brands. Taiwan’s plants can only rely on imports and need to actively find ways to improve added value.            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Therefore, DreamVok and ITRI worked together and unlike traditional skin care products, which focus only on R & D, we were particularly concerned with redefining people’s skincare practices. Through interviews with extreme users, we could understand the behavioral context and the demand gaps. After conducting analysis of benchmark cases at home and abroad, we first proposed the direction of innovation. Next, we gathered businesses, experts and users in the fields of medicine and beauty onto the same platform and incorporated new technological concepts, to discuss and come up with new innovation opportunities that were more futuristic and challenging.            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Finally, we helped to define the technology projects for the various opportunity points, and planned the technology development roadmap through patent searches and analysis. From the roadmap of innovation, we assisted multinational companies such as Taiyen to set goals for technology development and cooperate with different R & D units to create a revolutionary skin care products industry ecological chain.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/skincare-industry-innovation/img_skincare-industry-innovation_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">保養產業創新佈局</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.relative-patent-technology %}
+      {% if page.url contains case.url or case.url contains 'dementia-future-care-support-system' %}
+        {% continue %} 
+      {% endif %}
+        
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
