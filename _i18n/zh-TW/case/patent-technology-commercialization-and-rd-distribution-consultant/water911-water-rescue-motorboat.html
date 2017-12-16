@@ -1,0 +1,85 @@
+<!-- zh-TW/case/patent-technology-commercialization-and-r&d-distribution-consultant/water911-water-rescue-motorboat -->
+
+<header class="water911-water text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Water911 水上救援摩托艇</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          專案名稱｜Water911 水上救援摩托艇<br>
+          案例類別｜<a href="{{ site.baseurl }}/patent-technology-commercialization-and-r&d-distribution-consultant">專利 / 技術之商品化與研發佈局顧問</a><br>
+          客戶｜羅布森公司、工研院<br>
+          年份｜2013 - 2015<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          每當有濱海溺水事件發生時，第一時間抵達現場救援的非水上摩托艇莫屬。            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          然而，傳統水上摩托艇一次能救援的人數少，而且拖行時也容易讓昏迷的落水者受傷或再次落水，造成救援困難。            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          有鑑於此，我們協助船舶中心和摩托艇業者一起共創設計，從水上救援的情境和需求出發，結合「推進系統整合技術」和「流體分析技術」，讓水上摩托艇行進間更加穩定。同時，也透過「模組式氣囊系統」，加裝在船體兩側氣囊配件，從以往水上摩托艇只能搭救 1、2 位受難者，突破到能夠一次救 4～5位。            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          本技術目前船舶中心已移轉國內主要生產充氣式橡皮艇、及充氣式救生衣領先廠商，並於 2016 年台灣國際遊艇展、2016 高雄國際海事船舶暨國防工業展及 2016 台北國際發明暨技術交易展，進行實體展示與推廣。            
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>相關案例</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.relative-patent-technology %}
+      {% if page.url contains case.url or case.url contains 'dementia-future-care-support-system' %}
+        {% continue %} 
+      {% endif %}
+        
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
