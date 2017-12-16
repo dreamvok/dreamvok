@@ -1,0 +1,76 @@
+
+<!-- en/case/patent-technology-commercialization-and-r&d-distribution-consultant/lobsang-stairlift -->
+
+<header class="lobsang-stairlift text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Lobsang Stairlift</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Lobsang Stairlift<br>
+          Category｜<a href="{{ site.baseurl }}/patent-technology-commercialization-and-r&d-distribution-consultant">Patent Technology Commercialization and R&D Distribution Consultant</a><br>
+          Clients｜Lobsang Corporation / ITRI<br>
+          Year｜2013<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          Taiwan has one of the fastest aging populations in the world and is also affected by declining birth rates. As a result, more and more elderly people live alone, which creates many problems, such as going up and down stairs. For most of the old apartments, adding a “stairlift chair" seems to be a possible solution.            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          In the past, most stairlifts in Taiwan were imported from Europe or the U.S. In 2013, Lobsang Corporation and the ITRI (Mechanical and Mechatronics Systems Research Laboratories and Dechnology team) jointly developed ”FluxMerge” technology to move stairlifts. Due to the smaller seat size, most can be conveniently installed on existing staircases in the home. In addition, the exterior design is safer, more comfortable, aesthetically pleasing, and can be easily closed and controlled. Therefore, after Lobsang developed its own products, the “MIT” product became the top seller in Taiwan, and also took over 23% of market share overseas. Revenue became similar to Dutch brand Otolift, the second highest in the market, and achieved record sales of over a billion.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.relative-patent-technology %}
+      {% if page.url contains case.url or case.url contains 'dementia-future-care-support-system' %}
+        {% continue %} 
+      {% endif %}
+        
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
