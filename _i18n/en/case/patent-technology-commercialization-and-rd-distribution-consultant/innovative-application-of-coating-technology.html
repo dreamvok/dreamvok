@@ -1,0 +1,79 @@
+<!-- en/case/patent-technology-commercialization-and-rd-distribution-consultant/innovative-application-of-coating-technology -->
+
+<header class="innovative-application text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="">Innovative Application of Coating Technology</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="case_content">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-lg-8 mx-auto m-3">
+        <p class="mb-3 properties">
+          Project｜Innovative Application of Coating Technology<br>
+          Category｜<a href="{{ site.baseurl }}/patent-technology-commercialization-and-r&d-distribution-consultant">Patent Technology Commercialization and R&D Distribution Consultant</a><br>
+          Clients｜ITRI Material and Chemical Research Laboratories<br>
+          Year｜2016<br>
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+          The ITRI Material and Chemical Research Laboratories had a stain-resistant and easy to clean coating technology which could prevent the surface of items from getting wet or fog up. However, there are many similar sprays or materials available for lower prices in the automotive beauty industry and consumers were unable to recognize the true value of this coating technology. The technical team tried to come up with new positioning and new value for the technology’s future.            
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3">
+        <p class="">
+            A set of “technology value exploration tools” was developed for this case study to analyze the coating technology together with the R & D team. On the other hand, the project also focused on trends in user lifestyles, and finally developed application scenarios that included transportation tool tube cleaning, exterior wall dirt prevention, and indoor planting energy control. Through joint research with biotech R & D organizations, we successfully planned and organized R&D strategies for the next 3-5 years. Besides highlighting the “technical value” and “potential cross-domain applications” of the coating, we also promoted business cooperation with downstream and inter-industry partners.
+        </p>
+      </div>
+      <div class="col-lg-8 mx-auto m-3 mx-auto">  
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/innovative-application-of-coating-technology/img_innovative-application-of-coating-technology_01@2x.jpg" alt="">
+        <p class="text-primary img-desc">抗污易潔的塗料技術</p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section class="pb-0" id="portfolio">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="middleline middleline-primary">
+          <span>Related Cases</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio container-fluid p-0">
+    <div class="row no-gutters">
+      {% for case in site.data.relative-patent-technology %}
+      {% if page.url contains case.url %}
+        {% continue %} 
+      {% endif %}
+        
+      <div class="col-lg-4">
+        <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <p class="category mb-0">{{ case.duration }}</p>
+            </span>
+            <span class="caption-content">
+              <h4 class="title">{{ case.title_en }}</h4>
+            </span>
+            <span class="caption-content">
+              <p class="link mb-0 font-weight-normal">Read more</p>
+            </span>
+          </span>
+          <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

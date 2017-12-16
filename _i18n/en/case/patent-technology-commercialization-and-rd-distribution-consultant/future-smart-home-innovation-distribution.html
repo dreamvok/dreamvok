@@ -57,11 +57,15 @@
     </div>
     <div class="portfolio container-fluid p-0">
       <div class="row no-gutters">
-        {% for case in site.data.relative-patent-technology %}
-        {% if page.url contains case.url or case.url contains 'dementia-future-care-support-system' %}
-          {% continue %} 
-        {% endif %}
-          
+        {% for case in site.data.patent-technology-commercialization-and-rd-distribution-consultant %}
+          {% capture _ %}{% increment aindex %}{% endcapture %}
+          {% if page.url contains case.url or case.url contains 'corporate-innovation-design-workshop' %}
+            {% capture _ %}{% decrement aindex %}{% endcapture %}
+            {% continue %} 
+          {% endif %}
+          {% if aindex > 3 %}
+            {% continue %}
+          {% endif %}
         <div class="col-lg-4">
           <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
             <span class="caption">
