@@ -1,0 +1,84 @@
+<!-- zh-TW/case/patent-technology-commercialization-and-r&d-distribution-consultant/future-smart-home-innovation-distribution -->
+
+<header class="future-smart-home text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1 class="">Future Smart Home Innovation Distribution</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="case_content">
+    <div class="container">
+      <div class="row">
+        <div class="text-left col-lg-8 mx-auto m-3">
+          <p class="mb-3 properties">
+            Project｜Future Smart Home Innovation Distribution<br>
+            Category｜<a href="{{ site.baseurl }}/patent-technology-commercialization-and-r&d-distribution-consultant">Patent Technology Commercialization and R&D Distribution Consultant</a><br>
+            Clients｜ITRI Information and Communications Research Laboratories<br>
+            Year｜2015<br>
+          </p>
+        </div>
+        <div class="col-lg-8 mx-auto m-3">
+          <p class="">
+              Bill Gates, the founder of Microsoft, put forward the concept of smart homes in his book “Embrace the Future.” He believes that the Internet and other sensing technologies will bring wisdom to human dwellings over the next 10 years and make public life more convenient. In recent years, cloud computing and the IOT technology not only confirmed Bill Gates predictions, extended application areas are even broader and more intelligent than imagined.              
+          </p>
+        </div>
+        <div class="col-lg-8 mx-auto m-3">
+          <p class="">
+              In order to find out the Blue Ocean market for Taiwan’s smart homes, DreamVok explored innovative opportunities for smart homes by combining the innovative design methods of Dechnology with “Cloud Smart Video Time-lapse Technology” and “Oral Interactive Application Service Technology” developed by ITRI. During the project we invited directors of the nutrition department in hospitals, home appliance operators, care system vendors, family members and interior designers to participate in a co-creation workshop. We guided the experts to share their experiences and ideas on issues to find smart home innovative opportunities through co-creation. We concluded by proposing the three services of “smart nutrition management and ingredient management service,” “traditional building furniture smart moving model,” and “smart storage system."              
+          </p>
+        </div>
+        <div class="col-lg-8 mx-auto m-3">
+          <p class="">
+              Finally, the team not only worked out detailed operational models with technology developers and operators, but also finalized a smart home-based roadmap for technology and business strategy development as a reference for subsequent commercialization and technology distribution.
+          </p>
+        </div>
+        <div class="col-lg-8 mx-auto m-3 mx-auto">  
+          <img class="img-fluid" src="{{ site.baseurl }}/assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/future-smart-home-innovation-distribution/img_future-smart-home-innovation-distribution_01@2x.jpg" alt="">
+          <p class="text-primary img-desc">智慧家庭創新設計概念</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="pb-0" id="portfolio">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-12 mx-auto">
+          <h3 class="middleline middleline-primary">
+            <span>Related Cases</span>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio container-fluid p-0">
+      <div class="row no-gutters">
+        {% for case in site.data.relative-patent-technology %}
+        {% if page.url contains case.url or case.url contains 'dementia-future-care-support-system' %}
+          {% continue %} 
+        {% endif %}
+          
+        <div class="col-lg-4">
+          <a class="portfolio-item" href="{{ site.baseurl }}{{ case.url}}">
+            <span class="caption">
+              <span class="caption-content">
+                <p class="category mb-0">{{ case.duration }}</p>
+              </span>
+              <span class="caption-content">
+                <h4 class="title">{{ case.title_en }}</h4>
+              </span>
+              <span class="caption-content">
+                <p class="link mb-0 font-weight-normal">Read more</p>
+              </span>
+            </span>
+            <img class="portfolio-blend-img img-fluid" src="{{ site.baseurl }}/assets/images/{{ case.image_url}}" alt="">
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
