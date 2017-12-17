@@ -58,9 +58,6 @@
   text-decoration: underline;
 }
 
-.portfolio-blend-img {
-
-}
 
 @media (min-width: 992px) {
   .portfolio-item {
@@ -84,12 +81,9 @@
     clip-path: inset(-1px);
   }
 
-  .portfolio-item:hover img {
-  }
-
-  .portfolio-item:hover .caption {
-    background-color: rgba(0, 116, 200, 0.8);
-  }
+  // .portfolio-item:hover .caption {
+  //   background-color: rgba(0, 116, 200, 0.8);
+  // }
 }
 
 .image-client {
