@@ -8,17 +8,26 @@
   padding: 0;
 }
 
-.nav-link{
+.navbar-expand-lg .navbar-nav .nav-link{
+  font-size: 14px;
+  padding: .5rem 0;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
 }
 
-.nav-item{
-  & a{
-    font-size: 14px;
-    letter-spacing: 2px;
-    font-weight: 900;
+.nav-item {
+  margin: 0 1.5rem;
+}
+.nav-item.active{
+  & .nav-link{
+    color: $primary;
+    border-bottom: 2px $primary solid;
   }
-  padding: 0 1rem;
+}
+
+.navbar-toggler-icon{
+  color: $primary;
 }
 
 .navbar-vokano{

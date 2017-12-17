@@ -5,21 +5,22 @@
 <nav class="navbar navbar-expand-lg navbar bg-white fixed-top" id="mainNav">
   <a href="{{ site.baseurl }}/"><img class="navbar-brand" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_logo@2x.png" alt="logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <img class="navbar-toggler-icon" src="{{ site.baseurl }}/assets/fonts/menu.svg" alt="icon name">
   </button>
   {% if page_paths %}
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto mr-3">
-        <li class="nav-item active">
-          <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+        
+        <li class="nav-item {% if include.active_nav == 'about' %}active{% endif %}">
+          <a class="nav-link" href="{{ site.baseurl }}/about/">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {% if include.active_nav == 'service' %}active{% endif %}">
           <a class="nav-link" href="{{ site.baseurl }}/service">Service</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {% if include.active_nav == 'case' %}active{% endif %}">
           <a class="nav-link" href="{{ site.baseurl }}/case">Case</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {% if include.active_nav == 'contact' %}active{% endif %}">
           <a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a>
         </li>
         <li class="nav-item">

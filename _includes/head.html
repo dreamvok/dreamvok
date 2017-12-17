@@ -8,15 +8,13 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="stylesheet" href="{{ "/assets/bootstrap.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/fonts/open-iconic-bootstrap.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
   <meta property="og:title" content="DreamVok, a unique experience journey creator｜意集設計，獨特體驗旅程的最佳設計者" />
   <meta property="og:url" content="http://dreamvok.com" />
   <meta property="og:image" content="https://i.imgur.com/Oy4S3CE.jpg" />
-  
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
