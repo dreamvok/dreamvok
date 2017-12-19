@@ -96,7 +96,7 @@ h3 {
   background-color: $white;
   border: 1px solid $primary;
   border-radius: 0;
-
+  transition: color 1s linear;
   &:hover{
     color: $white;
     background-color: $primary;

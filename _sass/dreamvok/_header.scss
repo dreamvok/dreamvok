@@ -5,7 +5,7 @@ header {
   justify-content: center;
   height: 500px;
   position: relative;
-  background-color: $gray-800;
+  background-color: $primary;
   padding-top: 5rem;
   padding-bottom: 7rem;
   letter-spacing: 3px;
@@ -35,90 +35,90 @@ header {
 }
 
 header.home {
-  background: url("../assets/images/home/img_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/home/img_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.about {
-  background: url("../assets/images/about/img_about_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/about/img_about_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.service {
-  background: url("../assets/images/service/img_service_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/service/img_service_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.case {
-  background: url("../assets/images/case/img_case_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/img_case_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.contact {
-  background: url("../assets/images/contact/img_contact_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/contact/img_contact_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.news {
-  background: url("../assets/images/news/img_news_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/news/img_news_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.media_page {
-  background: url("../assets/images/media/img_media_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/media/img_media_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.career {
-  background: url("../assets/images/career/img_career_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/career/img_career_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.privacy_policy {
-  background: url("../assets/images/privacy_policy/img_privacy_policy_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/privacy_policy/img_privacy_policy_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 // integrative-design-research-required-for-innovation
 
 header.future-2020 {
-  background: url("../assets/images/case/integrative-design-research-required-for-innovation/2020-future-living-experience-design/img_2020-future-living-experience-design_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/integrative-design-research-required-for-innovation/2020-future-living-experience-design/img_2020-future-living-experience-design_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.next-generation {
-  background: url("../assets/images/case/integrative-design-research-required-for-innovation/next-generation-elder-friendly-city-research/img_next-generation-elder-friendly-city-research_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/integrative-design-research-required-for-innovation/next-generation-elder-friendly-city-research/img_next-generation-elder-friendly-city-research_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.how-to-age {
-  background: url("../assets/images/case/integrative-design-research-required-for-innovation/how-to-age-with-good-design/img_how-to-age-with-good-design_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/integrative-design-research-required-for-innovation/how-to-age-with-good-design/img_how-to-age-with-good-design_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.future-retail {
-  background: url("../assets/images/case/integrative-design-research-required-for-innovation/future-retail-future-travel-innovative-design-thinking-toolkit/img_future-retail-future-travel-innovative-design-thinking-toolkit_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/integrative-design-research-required-for-innovation/future-retail-future-travel-innovative-design-thinking-toolkit/img_future-retail-future-travel-innovative-design-thinking-toolkit_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.corporate-innovation {
-  background: url("../assets/images/case/integrative-design-research-required-for-innovation/corporate-innovation-design-workshop/img_corporate-innovation-design-workshop_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/integrative-design-research-required-for-innovation/corporate-innovation-design-workshop/img_corporate-innovation-design-workshop_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 // patent-technology-commercialization-and-r&d-distribution-consultant
 
 header.innovative-application {
-  background: url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/innovative-application-of-coating-technology/img_innovative-application-of-coating-technology_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/innovative-application-of-coating-technology/img_innovative-application-of-coating-technology_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.led-facial-mask{
-  background: url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/led-facial-mask/img_led-facial-mask_cover@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/led-facial-mask/img_led-facial-mask_cover@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.medical-tattoo-stickers{
-  background: url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/medical-tattoo-stickers/img_medical-tattoo-stickers_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/medical-tattoo-stickers/img_medical-tattoo-stickers_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
@@ -138,33 +138,33 @@ header.water911-water {
 }
 
 header.dementia-future {
-  background: url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/dementia-future-care-support-system/img_dementia-future-care-support-system_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/dementia-future-care-support-system/img_dementia-future-care-support-system_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.future-smart-home {
-  background: url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/future-smart-home-innovation-distribution/img_future-smart-home-innovation-distribution_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/future-smart-home-innovation-distribution/img_future-smart-home-innovation-distribution_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.skincare-industry {
-  background: url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/skincare-industry-innovation/img_skincare-industry-innovation_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/patent-technology-commercialization-and-r&d-distribution-consultant/skincare-industry-innovation/img_skincare-industry-innovation_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 // brand-experiences-and-new-business-model-design
 
 header.retirement-market {
-  background: url("../assets/images/case/brand-experiences-and-new-business-model-design/retirement-market-insurance-innovation-service-design/img_retirement-market-insurance-innovation-service-design_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/brand-experiences-and-new-business-model-design/retirement-market-insurance-innovation-service-design/img_retirement-market-insurance-innovation-service-design_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.future_hotel {
-  background: url("../assets/images/case/brand-experiences-and-new-business-model-design/50+_future_hotel_and_experience_design/img_50+_future_hotel_and_experience_design_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/brand-experiences-and-new-business-model-design/50+_future_hotel_and_experience_design/img_50+_future_hotel_and_experience_design_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
 
 header.real-estate {
-  background: url("../assets/images/case/brand-experiences-and-new-business-model-design/real-estate-technology-3-0/img_real-estate-technology-3-0_hero@2x.jpg") no-repeat center center;
+  background: $primary url("../assets/images/case/brand-experiences-and-new-business-model-design/real-estate-technology-3-0/img_real-estate-technology-3-0_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }

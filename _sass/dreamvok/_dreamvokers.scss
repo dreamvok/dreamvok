@@ -1,19 +1,15 @@
-#kevin:hover {
-  content: url("../assets/images/about/img_about_dreamvokers_kevin_b@2x.png");
+.dreamvoker {
+  position:relative;
+  height:160px;
+  left: -80px;
+  margin:0 auto;
 }
 
-#mike:hover {
-  content: url("../assets/images/about/img_about_dreamvokers_mike_b@2x.png");
+.dreamvoker img{
+  position: absolute;
+  transition: opacity 1s ease-in-out;
 }
 
-#phoebe:hover {
-  content: url("../assets/images/about/img_about_dreamvokers_phoebe_b@2x.png");
-}
-
-#lori:hover {
-  content: url("../assets/images/about/img_about_dreamvokers_lori_b@2x.png");
-}
-
-#yuhao:hover {
-  content: url("../assets/images/about/img_about_dreamvokers_yuhao_b@2x.png");
+.dreamvoker img.top:hover{
+  opacity:0;
 }
