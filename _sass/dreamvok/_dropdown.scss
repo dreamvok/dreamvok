@@ -5,33 +5,32 @@
   font-size: 1.2rem;
 }
 
-.dropdown .dropdown-menu {
+.dropdown > .dropdown-menu {
   position: absolute;
   top: 100%;
-  display: none;
   margin: 0;
-
+  display: block;
   /****************
    ** NEW STYLES **
    ****************/
+  border-right: 3px $primary solid;
+  border-left: 3px $primary solid;
+  border-top: 0;
+  border-radius: 0;
   list-style: none; /** Remove list bullets */
   width: 100%; /** Set the width to 100% of it's parent */
   padding: 0;
-  animation: fadeIn ease 1s;
+  opacity: 0;
+  transition:opacity 0.5s linear;
 }
 
-.dropdown:hover .dropdown-menu {
-  border-top: 0;
-  border-right: 3px $primary solid;
-  border-left: 3px $primary solid;
-  border-radius: 0;
-  display: block;
+.dropdown:hover > .dropdown-menu {
+  opacity: 1;
 }
 
-.dropdown:hover .dropdown-menu li{
+.dropdown > .dropdown-menu > li{
   border-bottom: 2px $primary solid;
   border-radius: 0;
-  display: block;
 }
 
 /** Button Styles **/
