@@ -51,6 +51,8 @@
   display: flex;
   text-align: left;
   background-color: #fff;
+  transition: .5s;
+  
   & .date{
     font-size: 14px;
     max-width: 150px;
@@ -68,5 +70,10 @@
     color: $primary;
     flex-grow: 2;
     text-align: right;
+  }
+
+  &:hover{
+    text-decoration: none;
+    transform: scale(1.008, 1.008);
   }
 }
