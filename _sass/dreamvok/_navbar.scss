@@ -50,7 +50,14 @@ $text: rgba(255,255,255,.7);
 
 .navbar-brand {
   height: 75px;
-  padding: 0;
+  width: 272px;
+}
+
+.navbar-brand img{
+  width:272px;
+  top:0;
+  left:0;
+  transition: .5s;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -66,13 +73,36 @@ $text: rgba(255,255,255,.7);
   padding-top: .5rem;
 }
 
+.navbar-vokano{
+  width: 54px;
+  height: 19px;
+  margin-bottom: 3px;
+}
 
+.navbar-vokano img{
+  width: 54px;
+  height: 19px;
+  top: 6px;
+  left:0;
+  transition: .5s;
+}
 
 .navbar-toggler-icon{
   color: $primary;
 }
-
-.navbar-vokano{
-  margin-bottom: 3px;
+.navbar-toggler > .navbar-toggler-icon{
+  background-image: url('../assets/fonts/menu_b.svg') ;
+}
+.navbar-toggler.collapsed > .navbar-toggler-icon{
+  background-image: url('../assets/fonts/menu_a.svg') ;
 }
 
+.navbar-toggler:focus {outline:0;}
+
+.two-change img{
+  position: absolute;
+}
+
+.two-change:hover .top{
+  opacity: 0;
+}

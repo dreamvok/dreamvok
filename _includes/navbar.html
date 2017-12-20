@@ -3,9 +3,14 @@
 {% assign page_paths = site.header_pages | default: default_paths %}
 
 <nav class="navbar navbar-expand-lg navbar bg-white fixed-top" id="mainNav">
-  <a href="{{ site.baseurl }}/"><img class="navbar-brand" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_logo@2x.png" alt="logo"></a>
+  <a href="{{ site.baseurl }}/">
+    <div class="navbar-brand two-change">
+      <img class="bot" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_logo_b@2x.png" alt="logo">
+      <img class="top" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_logo_a@2x.png" alt="logo">
+    </div>
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <img class="navbar-toggler-icon" src="{{ site.baseurl }}/assets/fonts/menu.svg" alt="icon name">
+    <div class="navbar-toggler-icon"></div>
   </button>
   {% if page_paths %}
     <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -24,7 +29,12 @@
           <a class="nav-link effect-3" href="{{ site.baseurl }}/contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link effect-3" target="_blank" href="https://medium.com/@vokano"><img width="54px" class="navbar-vokano" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_vokano@2x.png" alt="logo"></a>
+          <a class="nav-link effect-3" target="_blank" href="https://medium.com/@vokano">
+            <div class="navbar-vokano two-change">
+              <img class="bot" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_vokano_b@2x.png" alt="vokano">
+              <img class="top" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_vokano_a@2x.png" alt="vokano">
+            </div>
+          </a>
         </li>
       </ul>
     </div>
