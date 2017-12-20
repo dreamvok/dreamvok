@@ -35,6 +35,7 @@ header {
 }
 
 header.home {
+  min-height: 580px;
   background: $primary url("../assets/images/home/img_hero@2x.jpg") no-repeat center center;
   @include background-cover;
 }
