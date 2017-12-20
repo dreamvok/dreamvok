@@ -2,16 +2,21 @@
 //   background-image: url("../assets/images/")
 // }  
 
+.portfolio-blend-img {
+  transition: .5s;
+}
+
 .portfolio-item > .portfolio-blend-img {
-  background-color: #0075C9;
+  background-color: transparent;
   background-position: center; 
   background-size: cover;
   background-repeat: no-repeat;
+  background-blend-mode: multiply;
   height: 320px;
 }
 
 .portfolio-item:hover > .portfolio-blend-img{
-  background-blend-mode: multiply;
+  background-color: rgba(0, 117, 201, 1);
 }
 
 .portfolio-item >.portfolio-blend-img-high{

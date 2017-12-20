@@ -5,28 +5,30 @@
   font-size: 1.2rem;
 }
 
-.dropdown > .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  margin: 0;
+.dropdown-menu {
   display: block;
-  /****************
-   ** NEW STYLES **
-   ****************/
+  position: absolute;
+  margin: 0;
   border-right: 3px $primary solid;
   border-left: 3px $primary solid;
   border-top: 0;
   border-radius: 0;
-  list-style: none; /** Remove list bullets */
-  width: 100%; /** Set the width to 100% of it's parent */
+  list-style: none;
+  width: 100%;
   padding: 0;
+  transform: translateY(-.5rem);
+  visibility: hidden;
   opacity: 0;
-  transition:opacity 0.5s linear;
+  transition: transform 0.5s linear, visibility 0.3s linear, opacity 0.3s linear;
 }
 
 .dropdown:hover > .dropdown-menu {
+  visibility: visible;
   opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
 }
+
 
 .dropdown > .dropdown-menu > li{
   border-bottom: 2px $primary solid;
