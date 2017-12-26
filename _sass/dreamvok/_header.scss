@@ -40,6 +40,14 @@ header.home {
   @include background-cover;
 }
 
+@media only screen  and (min-width : 1224px) {
+  header.home {
+    min-height: 768px;
+    background: $primary url("../assets/images/home/img_hero@2x.jpg") no-repeat center center;
+    @include background-cover;
+  }
+}
+
 header.about {
   background: $primary url("../assets/images/about/img_about_cover@2x.jpg") no-repeat center center;
   @include background-cover;
