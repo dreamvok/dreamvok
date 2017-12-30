@@ -26,6 +26,7 @@ a {
   color: $gray-800;
   transition: color .2s;  
   &:hover{
+    text-decoration: none;
     color: $primary;
   }
 }
