@@ -93,3 +93,14 @@
     max-height: 25%;
   }
 }
+
+.news-item{
+  transition: .5s;
+  a:hover{
+    color: black;
+  }
+  &:hover{
+    text-decoration: none;
+    transform: scale(1.008, 1.008);
+  }
+}
