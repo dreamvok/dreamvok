@@ -16,9 +16,7 @@
 title: DreamVok
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  DreamVok 意集設計，是第 1 家從工研院 Spin off 的創新設計顧問公司。以設計力來驅動創新，與客戶共創獨特的品牌價值與服務體驗，重新定義未來產業的商業模式和遊戲規則。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dreavok.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
