@@ -1,0 +1,31 @@
+- url: "/"
+  title: DreamVok 意集設計
+  description: "獨特價值與體驗旅程的最佳設計者"
+
+- url: "/about/"
+  title: About - DreamVok
+  description: "DreamVok意集設計是工研院創立以來第1家Spin off成立之創新設計顧問公司，前身來自經濟部技術處「Dechnology 科技美學設計加值計畫」團隊。憑藉過去多年在科技研發、休閒旅遊、健康照護、金融保險和公共服務等領域，累積超過 350 件創新產品與服務設計經驗，發展出結合設計(D)、商業(B)與科技(T)的Dechnology創新方法。"
+
+- url: "/service/"
+  title: Service - DreamVok
+  description: "DreamVok主要服務項目包含：創新背後所需之整合式設計研究、專利 / 技術之商品化與研發佈局顧問、品牌體驗與新商業模式設計、50⁺ 新熟齡產品 / 服務合作開發，其他包含活動與設計經紀等創意設計服務"
+
+- url: "/case/"
+  title: 精選案例 - DreamVok
+  description: "我們精選案例包含未來零售/旅遊創新設計思考工具包、失智症未來照護輔助系統、房仲科技 3.0、2020 未來生活的體驗設計、下世代的友善高齡城市研究、高齡產品與服務創新工具組"
+
+- url: "/contact/"
+  title: Contact - DreamVok
+  description: "TEL +886 2-27666229 ｜Email  hello@dreamvok.com ｜ADD 台北市信義區光復南路 133 號 1 樓（南向製菸工廠 夥空間）"
+
+- url: "/news/"
+  title: News - DreamVok
+  description: ""
+
+- url: "/media/"
+  title: Media - DreamVok
+  description: ""
+
+- url: "/career/"
+  title: 加入我們 - DreamVok
+  description: "DreamVokers 有多元背景，重視也熱愛「設計」，相信從設計出發來整合資源，可以解決生活、企業經營甚至社會議題。DreamVokers 愛熱鬧、喜歡團隊合作，相信「一起」共創的價值，我們認為比單打獨鬥更有意義。如果想加入 DreamVok，歡迎把履歷資料及作品集寄至 hello@dreamvok.com，同時分享對我們的看法與建議。"
