@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  deploy:
+    docker:
+      - image: circleci/ruby:latest
+    environment:
+      USER_NAME: bugtender
+      USER_EMAIL: bugtender@gmail.com
+    steps:
+      - checkout
+      - run:
+          name: Ruby dependencies
+          command: bundle install
+      - run: chmod +x ./automata
+      - run:
+          name: Build
+          command: ./automata
+      - run:
+          name: Test
+          command: bundle exec htmlproofer ./_site \
+                    --allow-hash-href \
+                    --check-favicon  \
+                    --check-html \
+                    --disable-external
+      - run: echo "Deploy finished!"
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
