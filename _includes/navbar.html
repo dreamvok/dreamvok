@@ -37,12 +37,21 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link effect-3" target="_blank" href="https://medium.com/vokano">
-            <div class="navbar-5percent two-change">
-              <img class="bot" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_5percent@2x.png" alt="5percent">
-              <img class="top" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_5percent@2x.png" alt="5percent">
-            </div>
-          </a>
+          {% if site.lang == "en" %}
+            <a class="nav-link effect-3" target="_blank" href="http://5percent-design-action.com/index_en.php">
+              <div class="navbar-5percent two-change">
+                <img class="bot" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_5percent@2x.png" alt="5percent">
+                <img class="top" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_5percent@2x.png" alt="5percent">
+              </div>
+            </a>
+          {% else %}
+            <a class="nav-link effect-3" target="_blank" href="http://5percent-design-action.com/">
+              <div class="navbar-5percent two-change">
+                <img class="bot" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_5percent@2x.png" alt="5percent">
+                <img class="top" src="{{ site.baseurl }}/assets/images/navbar/img_navbar_5percent@2x.png" alt="5percent">
+              </div>
+            </a>
+          {% endif %}
         </li>
       </ul>
     </div>
