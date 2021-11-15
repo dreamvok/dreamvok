@@ -8,8 +8,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.6.2"
-gem 'html-proofer', '~> 3.9.0'
+
+gem "jekyll", "~> 3.9"
+gem "webrick", "~> 1.7"
+gem "kramdown-parser-gfm"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
@@ -29,4 +31,3 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-gem "webrick", "~> 1.7"
