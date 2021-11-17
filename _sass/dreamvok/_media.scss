@@ -57,20 +57,19 @@
   
   & .date{
     font-size: 14px;
-    max-width: 150px;
-    flex-grow: 2;
+    width: 150px;
     color: $gray-500;
   }
   & .title{
     font-weight: bold;
-    flex-grow: 8;
+    flex-grow: 7;
   }
   & .link{
     a{
       color: $primary;
     }
     color: $primary;
-    flex-grow: 2;
+    flex-grow: 3;
     text-align: right;
   }
 
